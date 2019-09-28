@@ -43,3 +43,19 @@ startTimer();
 /*オプションを足す場合はここへ記載*/
 
 });
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('').css('visibility','hidden');
+  $(window).scroll(function(){
+   var windowHeight = $(window).height(),
+       topWindow = $(window).scrollTop();
+   $('.fuwat').each(function(){
+    var objectPosition = $(this).offset().top;
+    if(topWindow > objectPosition - windowHeight + 500){
+     $(this).addClass("fuwatAnime");
+    }
+   });
+  });
+});
+</script>
