@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+.slide{
+position:relative;
+height: 900px;
+}
+.slide img{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:110vh;
+}
+
+.MainTitle{
+    color: #fff;
+    text-align: center;
+     position: absolute;
+    margin: 310px 540px;
+  
+}
+
+.MainTitle h1{
+    font-size:70px;
+}
+.MainTitle p{
+    font-size:20px
+}
+
+.ABOUT h2{
+    color:#182b2e;
+    text-align: center;
+}
