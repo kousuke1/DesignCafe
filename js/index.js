@@ -15,7 +15,7 @@ var lastPage =parseInt($(".slide img").length-1);
 
 //（５）ページ切換用、自作関数作成
 function changePage(){
-                         $(".slide img").fadeOut(10s00);
+                         $(".slide img").fadeOut(1000);
                          $(".slide img").eq(page).fadeIn(1000);
 };
 
@@ -57,4 +57,17 @@ $(document).ready(function(){
    });
   });
 });
+
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+
 
